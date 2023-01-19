@@ -4,40 +4,241 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tworzymy layout</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Car sharing</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
 
+  <body id="home">
 
-<header class="banner">
-    <h1 class="banner-title">Wycieczki w kosmos</h1>
-   </header>
-      
-   <main class="page-content">
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolor maxime dolore modi nostrum ipsum quisquam, earum porro, rerum ad amet voluptates. Deserunt nihil placeat mollitia voluptate assumenda quae nesciunt?</p>
-      <!-- <article class="article">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolor maxime dolore modi nostrum ipsum quisquam, earum porro, rerum ad amet voluptates. Deserunt nihil placeat mollitia voluptate assumenda quae nesciunt?</p> -->
-      </article>
+<header>
+
+  <div class="top-navi-container">
+<div class="container container-menu menu"> 
+  <div class="menu__logo">
+    <img src="./images/Icon Logo Normal.svg" class="menu__logo-icon"/>
+      <div class="menu__logo-text" ><span class="menu__logo-text--red">Car</span> sharing
     </div>
-  </main>
+  </div>
+
+  <ul class="menu__elements">
+    <a href="#home"><li>Home</li></a>
+    <a href="#blog"><li>Blog</li></a>
+    <a href="#service"><li>Service</li></a>
+    <a href="#contact"><li>Contact</li></a>
+  </ul>
+</div>
+</div>
+
+
+
+<div class="hero">
+  <div class="container">
+    <h1 class="hero-title">Car sharing</h1>
+    <h3 class="hero-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur et dolor totam, sed eligendi ea accusantium. </br> Iste quas aut ipsa, deserunt ducimus dignissimos minima porro hic itaque nihil nemo asperiores.</h3>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">Share a car</button>
+      <button class="btn btn-secondary">Key features </button>
+    </div>
+    
+    </div>
+    <a class="hero-down-arrow" href="#blog"></a>
+  </div>
+  
+</div>
+
+
+</header>
+
+<!-- Page content, white container -->
+<main class="page-content">
+  <div class="container">
+    <div class="articles-main-header"><h2 id="blog"> Blog</h2></div>
+    <div class="articles">
+        <article class="article-3-column-grid">
+          <img src="./images/photo1.png" alt="" class="article-photo-img" />
+          <h4 class="article-title">Lorem ipsum sit dolor</h4>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. Suspendisse vel ornare lectus, sit amet suscipit est. Praesent et laoreet lacus, a tempus nisi.
+            </p>
+          <button class="btn btn-tertiary">Read more</button>
+        </article>
+        <article class="article-3-column-grid">
+          <img src="./images/photo2.png" alt="" class="article-photo-img" />
+          <h4 class="article-title">Lorem ipsum sit dolor</h4>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. Suspendisse vel ornare lectus, sit amet suscipit est. Praesent et laoreet lacus, a tempus nisi.
+            </p>
+          <button class="btn btn-tertiary">Read more</button>
+        </article>
+        <article class="article-3-column-grid">
+          <img src="./images/photo3.png" alt="" class="article-photo-img" />
+          <h4 class="article-title">Lorem ipsum sit dolor</h4>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. Suspendisse vel ornare lectus, sit amet suscipit est. Praesent et laoreet lacus, a tempus nisi.
+            </p>
+          <button class="btn btn-tertiary">Read more</button>
+        </article>
+    </div>
+  </div>
+
+<!-- Dark container -->
+<div class="full-dark-zone" >
+  <div class="container">
+    <div class="articles-main-header text-dark-background"><h2 > Service</h2></div>
+    <div class="articles--4-column-grid">
+        <article class="article-3-column-grid article-3-column-grid--4-column">
+          <img src="./images/mini1.png" alt="" class="article-photo-img article-photo-img--4-column-grid" />
+          <h4 class="article-title text-dark-background">Lorem ipsum sit dolor</h4>
+          <p class="article-text text-dark-background--content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. 
+            </p>
+          <button class="btn btn-tertiary">Read more</button>
+          </article>
+
+        <article class="article-3-column-grid article-3-column-grid--4-column">
+            <img src="./images/mini2.png" alt="" class="article-photo-img article-photo-img--4-column-grid" />
+            <h4 class="article-title text-dark-background">Lorem ipsum sit dolor</h4>
+            <p class="article-text text-dark-background--content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. 
+              </p>
+            <button class="btn btn-tertiary">Read more</button>
+        </article>
+
+        <article class="article-3-column-grid article-3-column-grid--4-column">
+              <img src="./images/mini3.png" alt="" class="article-photo-img article-photo-img--4-column-grid" />
+              <h4 class="article-title text-dark-background">Lorem ipsum sit dolor</h4>
+              <p class="article-text text-dark-background--content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. 
+                </p>
+              <button class="btn btn-tertiary">Read more</button>
+        </article>
+
+        <article class="article-3-column-grid article-3-column-grid--4-column">
+                <img src="./images/mini4.png" alt="" class="article-photo-img article-photo-img--4-column-grid" />
+                <h4 class="article-title text-dark-background">Lorem ipsum sit dolor</h4>
+                <p class="article-text text-dark-background--content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem turpis, ullamcorper eu maximus sit amet, dictum sed risus. 
+                  </p>
+                <button class="btn btn-tertiary">Read more</button>
+        </article>
+    </div>
+  </div></div>
+
+
+<!-- White container, CONTACT -->
+
+<div class="container container--thinner ">
+  <div class="articles-main-header"><h2 id="contact"> Contact</h2></div>
+    <div class="two-column-grid">
+
+      <img src="./images/Form Photo.png" class="contact-photo-form">
+
+      <div class="contact-forms">
+
+        <div class="form-containers">
+          <label for="name">
+            <input name="name" type="text" placeholder="Type your name" />
+          </label>
+        </div>
+
+        <div class="form-containers">
+          <label for="email">
+            <input name="email" type="text" placeholder="Type your email" />
+          </label>
+        </div>
+        
+
+        <div class="form-containers">
+          <label for="message">
+            <textarea name="message" placeholder="Type your message" rows="3" ></textarea>
+          </label>
+        </div>
+
+        <div class="checkbox-accept">
+          <label class="form__checkbox">
+            <input type="checkbox"/>
+            <span class="checkbox"></span>
+          </label>
+        
+          <label for="checkbox-label"> I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliaments and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+          </label><br>
+        </div>
+        <button class="btn btn-tertiary btn-quinary">Send</button>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+
+        
+          
+      
+
+  
+
+
+</main>
+
+
+<!-- FOOTER -->
 
 <footer class="page-footer">
-    <div class="container">
-        <p class="p__footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolor maxime dolore modi nostrum ipsum quisquam, earum porro, rerum ad amet voluptates. Deserunt nihil placeat mollitia voluptate assumenda quae nesciunt?  
-        </p>
+  <div class="container container-footer ">
+
+    <div class="page-footer-columns">
+    <div class="footer-first-column">
+        <div class="menu__logo menu__logo__footer">
+          <img src="./images/Icon Logo Normal.svg" class="menu__logo-icon menu__logo-icon--footer"/>
+          <div class="menu__logo-text menu__logo-text--footer"><span class="menu__logo-text--red">Car</span> sharing
+          </div>
+        </div>
+
+        <div class="footer-first-column-menu-container">
+          <ul>
+            <li>Home page</li>
+            <li>About us</li>
+            <li>Gallery</li>
+            <li>Share Regulation</li>
+          </ul>
+
+          <ul>
+            <li>Price</li>
+            <li>Our fleet</li>
+            <li>Our clients</li>
+            <li>Contact</li>
+          </ul>
+      
+        </div>
+
+        
     </div>
+
+    <div class="footer-second-column">
+      <p class="footer-second-column-copyright">Copyright © Coders Lab</p>
+    </div>
+  </div>
+  </div>
 </footer>
 
 
 
+
+<body>
+
 </html>
+
